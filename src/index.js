@@ -14,7 +14,7 @@ import { Dimensions, Keyboard, LogBox, Platform, TextInput, TouchableOpacity, Vi
 import { Dropdown } from './Dropdown'
 import { moderateScale, ScaledSheet } from 'react-native-size-matters'
 import { NothingFound } from './NothingFound'
-import { RightButton } from './RightButton'
+// import { RightButton } from './RightButton'
 import { ScrollViewListItem } from './ScrollViewListItem'
 
 export const AutocompleteDropdown = memo(
@@ -291,7 +291,7 @@ export const AutocompleteDropdown = memo(
               ...(props.textInputProps ?? {}).style
             }}
           />
-          <RightButton
+          {/* <RightButton
             isOpened={isOpened}
             inputHeight={inputHeight}
             onClearPress={onClearPress}
@@ -304,7 +304,7 @@ export const AutocompleteDropdown = memo(
             ClearIconComponent={props.ClearIconComponent}
             RightIconComponent={props.RightIconComponent}
             onRightIconComponentPress={props.onRightIconComponentPress}
-          />
+          /> */}
         </View>
         {isOpened && Array.isArray(dataSet) && (
           <Dropdown
